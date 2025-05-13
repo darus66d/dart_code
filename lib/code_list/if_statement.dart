@@ -26,17 +26,6 @@ void main(){
     print("It's warm but raining");
   }
 
-  //   Example 3 if else statement
-
-  print("\nExample 3: if else statements");
-
-  if(age>=18 && age<=35){
-    print("You are an adult");
-  }else if(age>=35){
-    print("You are middle aged");
-  }else{
-    print("you are a minor");
-  }
 
   // Example 4 basic else if ladder with numbers and conditions
 
@@ -57,6 +46,8 @@ void main(){
   }else {
     print("Grade is: F");
   }
+
+  // Example 5 else if with multiple Conditions
 
 
 
