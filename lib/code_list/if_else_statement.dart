@@ -4,7 +4,7 @@ void main(){
 
   int age =25;
 
-  print("\nExample 3: if else statements");
+  print("\nExample 1: if else statements");
 
   if(age>=18 && age<=35){
     print("You are an adult");
