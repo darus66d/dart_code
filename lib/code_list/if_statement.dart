@@ -33,10 +33,12 @@ void main(){
   if(age>=18 && age<=35){
     print("You are an adult");
   }else if(age>=35){
-    print("You are a old man");
+    print("You are middle aged");
   }else{
     print("you are a minor");
   }
+
+  // Example 4
 
 
 
