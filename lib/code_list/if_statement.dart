@@ -12,5 +12,18 @@ void main(){
   }
 
 
+  //Example 2 if multiple statements
+
+  int temperature = 27;
+  bool isRaining = true;
+
+  print("\nExample 2: if multiple statements");
+
+  if(temperature>20 && isRaining){
+    print("It's warm but raining");
+  }
+
+
+
 
 }
