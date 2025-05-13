@@ -2,7 +2,7 @@ void main(){
   //control flow / conditions
 
   // Example 1  simple if statement
-  int age = 25;
+  int age = 36;
 
 
   print("Example 1: simple if statement");
@@ -25,6 +25,19 @@ void main(){
   if(temperature>20 && isRaining){
     print("It's warm but raining");
   }
+
+  //   Example 3 if else statement
+
+  print("\nExample 3: if else statements");
+
+  if(age>=18 && age<=35){
+    print("You are an adult");
+  }else if(age>=35){
+    print("You are a old man");
+  }else{
+    print("you are a minor");
+  }
+
 
 
 
