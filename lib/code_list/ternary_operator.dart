@@ -16,5 +16,31 @@ void main(){
 
   print("Hello! ${name=="darus" ? "Mr.darus" : name} ");
 
+  //example 3: nested ternary operator
+
+  int score = 85;
+  print("\nExample 3: Nested ternary operator");
+
+  String grade =
+  score > 90
+      ? "A"
+      : score > 80
+      ? "B"
+      : score > 70
+      ? "C"
+      : score > 60
+      ? "D"
+      : "F";
+  print("Grade: $grade");
+
+ //Example 4: Ternary operator with boolean
+  
+  bool isRaining = true;
+  print("\nExample 4: Ternary operator with boolean");
+  
+  print(isRaining ? "take an umbrella" : "Enjoy the rain");
+
+
+
 
 }
