@@ -39,4 +39,34 @@ void main(){
   }else{
     print("Hello! $name");
   }
+
+  //Example 4: if else with number range
+  int score = 85;
+  print("\nExmaple 4: If else with Number range");
+
+  if(score>90){
+    print("Grade is A");
+  }else if(score>80){
+    print("Grade is B");
+  }else if(score>70){
+    print("Grade is C");
+  }else if(score>60){
+    print("Grade is D");
+  }else{
+    print("You need to retake the exam");
+  }
+
+  //Example 5: if else with list operations
+
+  //List<int> num = [1,2,3,4];
+  List<int> num = [ ];
+
+  print("\nExample if else with List operations");
+
+  if(num.isNotEmpty){
+    print("The list is not empty");
+  }else{
+    print("The List is Empty");
+  }
+
 }
