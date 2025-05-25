@@ -75,5 +75,22 @@ void main(){
     print("Sorry! It's a private event for Darus");
   }
 
-  //Example
+  //Example 5: nested if else with list operations
+
+  List<int> numbers =[1,2,3];
+  //List<int> numbers =[4,5,6];
+  //List<int> numbers =[];
+  int searchNumber = 2;
+
+  print("\nExample 5: nested if else with list operations\n");
+
+  if(numbers.isNotEmpty){
+    if(numbers.contains(searchNumber)){
+      print("Found $searchNumber in the list");
+    }else{
+      print("$searchNumber is not found in the list");
+    }
+  }else{
+    print("The list is empty");
+  }
 }
