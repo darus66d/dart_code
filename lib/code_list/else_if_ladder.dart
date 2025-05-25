@@ -74,6 +74,24 @@ void main() {
     print("you are old now");
   }
 
-  //example 5:
+  //example 5: if else ladder with multiple conditions
+
+  int time = 14;
+  bool isWeekend = false;
+
+  print("\nExample 5: if else ladder with multiple conditions");
+
+  if(isWeekend){
+    print("It's is weekend!");
+  }else if (time<12){
+    print("Good Morning");
+  }else if (time<17){
+    print("Good afternoon");
+  }else if(time<21){
+    print("Good evening");
+  }else {
+    print("Good night");
+  }
+
 
 }
