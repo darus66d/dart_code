@@ -6,7 +6,7 @@ void main(){
   bool hasId = true;
   //bool hasId = false;
 
-  print("Example 1: basic Nested if else\n");
+  print("Example 1: basic Nested if else");
   if(age>=18){
     if(hasId){
       print("You can enter the venue");
@@ -24,7 +24,7 @@ void main(){
   //  bool hasUmbrella = true;
   bool hasUmbrella = false;
 
-  print("\nExample 2: Nested if else with multiple conditions\n");
+  print("\nExample 2: Nested if else with multiple conditions");
   
   if(temparature>=20){
     if(isRaining){
@@ -45,7 +45,7 @@ void main(){
   int score = 85;
   bool isPassing = true;
 
-  print("\nExample 3: nested if else with number ranges\n");
+  print("\nExample 3: nested if else with number ranges");
 
   if(score>=70){
     if(score>=90){
@@ -82,7 +82,7 @@ void main(){
   //List<int> numbers =[];
   int searchNumber = 2;
 
-  print("\nExample 5: nested if else with list operations\n");
+  print("\nExample 5: nested if else with list operations");
 
   if(numbers.isNotEmpty){
     if(numbers.contains(searchNumber)){
