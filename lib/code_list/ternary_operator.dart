@@ -49,6 +49,13 @@ void main(){
 
   print(num.isEmpty? "The list is empty" : "List has ${num.length} items" );
 
+  //Example 6: ternary operators null check
+
+  String? nullableName;
+
+  print("\nExample 6: ternary operators null check");
+
+  print(nullableName != null ? "Hello $nullableName!" : "Hello! Guest" );
 
 
 
