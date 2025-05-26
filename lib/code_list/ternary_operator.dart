@@ -58,5 +58,32 @@ void main(){
   print(nullableName != null ? "Hello $nullableName!" : "Hello! Guest" );
 
 
+  //Example 7: Ternary operators with number operations
+
+  int number = 10;
+
+  print("\nExample 7: Ternary operators with number operations");
+
+  int result = number < 5 ? number * 2 : number +5;
+  print("Output: $result");
+
+  //Example 8: ternary operators with multiple conditions
+
+  int time = 14;
+  bool isWeekend = false;
+
+  print("\n Example 8: Ternary operator with multiple conditions");
+
+  print(isWeekend ? "weekend!"
+     : time < 12
+      ? "Good Morning!"
+      : time < 17
+      ? " Good Afternoon"
+      : time < 21
+      ? "Good evening"
+      : "Good night",
+
+  );
+
 
 }
