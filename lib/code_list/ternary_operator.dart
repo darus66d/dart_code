@@ -41,6 +41,15 @@ void main(){
   print(isRaining ? "take an umbrella" : "Enjoy the rain");
 
 
+  //Example 5: ternary operators with list operations
+
+  List<int> num = [1,2,3,4,5,6];
+
+  print("\nExample 5: Ternary operators with list operations");
+
+  print(num.isEmpty? "The list is empty" : "List has ${num.length} items" );
+
+
 
 
 }
