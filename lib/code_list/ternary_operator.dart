@@ -2,6 +2,8 @@
 
 void main(){
 
+
+
   //Example 1: basic ternary operator
   int age = 20;
   print("\nExample 1: basic ternary operator");
@@ -9,12 +11,17 @@ void main(){
   String message = age>=18 ? "Adult" : "Minor";
   print("Status: $message");
 
+
+
   //Example 2: Ternary operator with string concatenation
 
   String name = "darus";
   print("\nExample 2: Ternary operator with concatenation");
 
   print("Hello! ${name=="darus" ? "Mr.darus" : name} ");
+
+
+
 
   //example 3: nested ternary operator
 
@@ -41,6 +48,7 @@ void main(){
   print(isRaining ? "take an umbrella" : "Enjoy the rain");
 
 
+
   //Example 5: ternary operators with list operations
 
   List<int> num = [1,2,3,4,5,6];
@@ -58,6 +66,7 @@ void main(){
   print(nullableName != null ? "Hello $nullableName!" : "Hello! Guest" );
 
 
+
   //Example 7: Ternary operators with number operations
 
   int number = 10;
@@ -66,6 +75,8 @@ void main(){
 
   int result = number < 5 ? number * 2 : number +5;
   print("Output: $result");
+
+
 
   //Example 8: ternary operators with multiple conditions
 
