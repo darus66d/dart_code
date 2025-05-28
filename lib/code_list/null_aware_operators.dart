@@ -14,11 +14,28 @@ void main(){
   
   String ? message;
   
-  print("\nExample 2: null aware assignment operator");
+  print("\nExample 2: null aware assignment operator (??=)");
 
   message ??= "Default message";
   print("Message: $message");
-  
+
+  //Example 3: null aware operator with non null value
+
+  String ? title = "Mr";
+
+  print("\nExample 3: null aware operator with non null value");
+
+  // String? title = null;
+  // String fullName = title ?? 'Mr.';
+  // print('Hello, $fullName Smith!');
+
+  String fullName = title ?? "Mr.";
+
+  print("Hello $fullName Darus");
+
+  //Example 4: null aware operator with function Calls
+
+
   
   
 }
