@@ -35,7 +35,20 @@ void main(){
 
   //Example 4: null aware operator with function Calls
 
+  String? userInput;
+
+  print("\nExample 4: null aware operator with function calls");
+
+  //String displayName = userInput ?? getUserName();
+  String displayName = userInput ?? getUserName();
+  print("Welcome, $displayName!");
+
 
   
   
+}
+
+//helper function for Example 4
+String getUserName(){
+  return "default USer";
 }
