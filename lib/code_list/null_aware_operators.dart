@@ -52,6 +52,19 @@ void main(){
 
   print("Numbers: $safeNumbers");
 
+  // Example 7: Null-aware operator with maps
+
+  // Example 8: Complex null-aware operations
+
+  String? email;
+  String? phone;
+
+  print("\nExample 8: Complex null aware operations");
+
+  String contactInfo = email ?? phone ?? "No contact Information available";
+  print("Contact: $contactInfo");
+
+
 
   
   
