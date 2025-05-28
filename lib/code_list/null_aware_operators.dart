@@ -42,6 +42,16 @@ void main(){
   String displayName = userInput ?? getUserName();
   print("Welcome, $displayName!");
 
+  //Example 5: null aware operator with lists
+
+  List<int>? numbers;
+
+  print("\nExample 4: null aware operator with lists");
+
+  List<int> safeNumbers =  numbers ?? [1,2,3,4];
+
+  print("Numbers: $safeNumbers");
+
 
   
   
