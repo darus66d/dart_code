@@ -64,10 +64,6 @@ void main(){
   String contactInfo = email ?? phone ?? "No contact Information available";
   print("Contact: $contactInfo");
 
-
-
-  
-  
 }
 
 //helper function for Example 4
