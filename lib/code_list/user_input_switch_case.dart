@@ -28,4 +28,29 @@ void main() {
     default:
       print("Saturday");
   }
+
+  //Example 2: Switch case with strings
+  print("\nExamplle 2: Switch Case with Strings");
+  print("Enter a Grade(A,B,C,D,F)");
+  String? grade  = stdin.readLineSync()?.toUpperCase();
+  switch(grade){
+    case "A":
+      print("Excellent");
+      break;
+    case "B":
+      print("Good job");
+      break;
+    case "C":
+      print("SatisFactory");
+      break;
+    case "D":
+      print("Needs improvement");
+      break;
+    case "F":  
+      print("Fail");
+      break;
+    default:
+      print("Invalid Grade");
+
+  }
 }
