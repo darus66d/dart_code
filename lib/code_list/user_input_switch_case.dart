@@ -1,4 +1,5 @@
 import 'dart:io';
+enum Direction { north, south, east, west }
 
 void main() {
 //Example 2: Switch case user input
@@ -54,7 +55,21 @@ void main() {
 
   }
 
-  //Example 3:
+  //Example 3: switch case with enum
+  print("\nExample 3: Switch Case with enum");
+  print("Enter a direction (north,south,east or west): ");
+  String? directionInput = stdin.readLineSync()?.toLowerCase();
+  Direction?  direction;
+  
+  switch (directionInput){
+    case "north":
+      direction = Direction.north;
+      break;
+
+  }
+  
+  
+
 
 
 
