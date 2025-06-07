@@ -65,8 +65,35 @@ void main() {
     case "north":
       direction = Direction.north;
       break;
+    case "south":
+      direction = Direction.south;
+      break;
+    case "east":
+      direction = Direction.east;
+      break;
+    case "west":
+      direction = Direction.west;
+      break;
+    default :
+      print("Invalid direction");
+      return;
+  }
+  switch (direction){
+    case Direction.north: 
+      print("Going North");
+      break;
+      case Direction.south:
+      print("Going South");
+      break;
+      case Direction.east:
+      print("Going East");
+      break;
+      case Direction.west:
+      print("Going west");
+      break;
 
   }
+
   
   
 
