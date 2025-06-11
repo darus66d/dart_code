@@ -13,6 +13,7 @@ void main(){
   //Example 2: null aware assignment operator
   
   String ? message;
+  //String? message = "Hi";
   
   print("\nExample 2: null aware assignment operator (??=)");
 
