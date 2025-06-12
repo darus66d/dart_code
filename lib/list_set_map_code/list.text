@@ -88,4 +88,14 @@ Dart Collection:
              print("After update: $itemList");
 
 -------------------------------------------------------------
-           Topic Name:-
+           Topic Name:- use case of list
+            use case is everywhere
+
+-------------------------------------------------------------
+            Topic name:- list Mutable and Immutable
+            By Default list is mutable
+                -add
+                -remove
+                -update
+
+---------------------------------------------------------------
