@@ -3,4 +3,45 @@ Dart Collection:
 
 
 
-    1. What is List and How to create a list?
+ What is List and How to create a list?
+------------------------------------------------
+       Topic Name:- List is a ordered Collection
+
+        List CityList =["Dhaka","Feni","Ctg","Khulna","Comilla",];
+        //index[0,1,2,3,4]
+        print(CityList);
+
+-------------------------------------------------
+       Topic name:- Generic in list
+
+       List<dynamic> CityList =[1,2,3,40.4,"Dhaka","Feni","Ctg","Khulna","Comilla",];
+         List<String> list1 = ["Dhaka","Feni","Ctg","Khulna","Comilla",];
+         List<int> list2 = [1,2,3,4,5];
+
+         //Generics Default Dynamic
+         // Generics int,String,Boolean
+
+---------------------------------------------------
+
+       Topic Name:- How to Apply Loop Over list
+
+       List MyMate = ["Darus","Salam","Emon","Saimon","Nadim","Sakib","Tarim","bappi","Noman"];
+         print("\nExample 2: How to Apply loop over a list");
+         for(int i=0; i<MyMate.length;i++){
+             print("My Mate name is: ${MyMate[i]}");
+             }
+
+----------------------------------------------------
+
+        Topic Name:- List Sorting ASC, DESC
+        List<int> numbers= [1,2,3,4,5,62,54,6,453,43,78,99,100,34,65,11,21];
+          print("\nExample 3: Sorting list in ASC, DESC ordered");
+          print("numbers: $numbers");
+          //ASC
+          numbers.sort();
+          print("\nSort numbers: $numbers");
+          //DESC
+          List numbersReverse = numbers.reversed.toList();
+          print("\nReverseNumber: $numbersReverse");
+
+------------------------------------------------------
