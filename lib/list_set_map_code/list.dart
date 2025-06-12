@@ -51,6 +51,25 @@ void main(){
     CountryList.clear();
     print("AfterClear: $CountryList");
 
+    //Example 5: Adding item in List
+    List itemList = ["Pen","Pencil","Rubber","Calculator","Scale","IdCard"];
+    print("\nExample 5: Adding item in List");
+    print("Item List: $itemList");
+    //AddLast
+    itemList.add("Admit Card");
+    print("\nAfterAdding: $itemList");
+    //AddMultiple
+    itemList.addAll(["book","Paper","laptop","Charger"]);
+    print("AfterAddMultipleItem: $itemList");
+    //add Specific index
+    itemList.insert(0, "Food");
+    print("AfterAddSpecificIndex: $itemList");
+
+
+
+
+
+
 
 
 

@@ -46,5 +46,38 @@ Dart Collection:
 
 ------------------------------------------------------
         Topic Name : List Slicing,Cutting,Item removing
+         List CountryList = ["Bangladesh","Pakistan","Nepal","Bhutan","MayanMar","India"];
+            print("\nExample 4: Slicing,cutting,item removing from a List");
+            print("\nCountryList: $CountryList");
+            //Slicing
+            List CountryListAfterSlicing = CountryList.sublist(0,5);
+            print("\nCountryListAfterSlicing: $CountryListAfterSlicing");
+            //Removing
+            CountryList.remove("India");
+            print("AfterRemoving: $CountryList");
+            //Remove Specific Index
+            CountryList.removeAt(4);
+            print("AfterRemoveSpecficIndex: $CountryList");
+            //Remove from Last
+            CountryList.removeLast();
+            print("AfterRemoveLast: $CountryList");
+            //Clear List
+            CountryList.clear();
+            print("AfterClear: $CountryList");
 
+-------------------------------------------------------
+          Topic Name: Adding in List
+          List itemList = ["Pen","Pencil","Rubber","Calculator","Scale","IdCard"];
+             print("\nExample 5: Adding item in List");
+             print("Item List: $itemList");
+             //AddLast
+             itemList.add("Admit Card");
+             print("\nAfterAdding: $itemList");
+             //AddMultiple
+             itemList.addAll(["book","Paper","laptop","Charger"]);
+             print("AfterAddMultipleItem: $itemList");
+             //add Specific index
+             itemList.insert(0, "Food");
+             print("AfterAddSpecificIndex: $itemList");
 
+------------------------------------------------------------
