@@ -66,6 +66,15 @@ void main(){
     print("AfterAddSpecificIndex: $itemList");
 
 
+    //Example 6: Update in item list
+  print("\nExample 6: Update in Country list");
+  //update by index number
+  itemList[1]= "Gel pen";
+  print("After update: $itemList");
+
+
+
+
 
 
 

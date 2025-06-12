@@ -81,3 +81,11 @@ Dart Collection:
              print("AfterAddSpecificIndex: $itemList");
 
 ------------------------------------------------------------
+           Topic Name:- Update In list
+            print("\nExample 6: Update in Country list");
+             //update by index number
+             itemList[1]= "Gel pen";
+             print("After update: $itemList");
+
+-------------------------------------------------------------
+           Topic Name:-
