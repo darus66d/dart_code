@@ -30,6 +30,31 @@ void main(){
    print("\nReverseNumber: $numbersReverse");
 
 
+   //Example 4: Slicing,cutting,item removing from a List
+
+    List CountryList = ["Bangladesh","Pakistan","Nepal","Bhutan","MayanMar","India"];
+    print("\nExample 4: Slicing,cutting,item removing from a List");
+    print("\nCountryList: $CountryList");
+    //Slicing
+    List CountryListAfterSlicing = CountryList.sublist(0,5);
+    print("\nCountryListAfterSlicing: $CountryListAfterSlicing");
+    //Removing
+    CountryList.remove("India");
+    print("AfterRemoving: $CountryList");
+    //Remove Specific Index
+    CountryList.removeAt(4);
+    print("AfterRemoveSpecficIndex: $CountryList");
+    //Remove from Last
+    CountryList.removeLast();
+    print("AfterRemoveLast: $CountryList");
+    //Clear List
+    CountryList.clear();
+    print("AfterClear: $CountryList");
+
+
+
+
+
 
 
 
