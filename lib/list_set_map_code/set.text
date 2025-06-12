@@ -1,0 +1,40 @@
+what is Set and How to create a set
+
+-----------------------------------------
+       Topic Name:- unordered list
+        Set latter = {'a','b','c','d','e','f','g','h','i'};
+          print(latter[0]);
+        }
+        -set avoid duplicate values
+        -set always works with unique value
+
+-----------------------------------------
+        Topic Name:- Generics in Set
+         Set latter = {'a','b','c','d','e','f','g','h','i'};
+          Set<dynamic> latter1 = {1,2,3,40.5,true,false,'a','b','c','d','e','f','g','h','i'};
+          Set<String> latter2 = {'a','b','c','d','e','f','g','h','i'};
+          Set<int> latter3 = {1,2,3,4,5,6,7,8,9};
+          Set<bool> latter4 = {true,false};
+
+
+-------------------------------------------
+        Topic Name :- how can add item in set
+        Set itemSet = {"Pen","Pencil","Rubber","Calculator","Scale","IdCard"};
+          print("\nExample 2: Add Item in Set");
+          //add one item
+          itemSet.add("Admit Card");
+          print("\nAfterAdd: $itemSet");
+           //add multiple item
+            itemSet.addAll(["Food","Money"]);
+            print("After Add multiple item: $itemSet");
+
+-------------------------------------------
+
+        -There is no inset option because Set is unordered list
+
+--------------------------------------------
+
+        Topic name: use Case
+            -not much "rare"
+
+
