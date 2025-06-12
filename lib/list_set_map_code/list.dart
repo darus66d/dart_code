@@ -1,17 +1,17 @@
 void main(){
   //Example 1: Basic list Create
   print("\nExample 1: Basic list Create ");
-  List CityList =[1,2,3,40.4,"Dhaka","Feni","Ctg","Khulna","Comilla",];
-   List<String> list1 = ["Dhaka","Feni","Ctg","Khulna","Comilla",];
-   List<int> list2 = [1,2,3,4,5];
-  print(CityList);
+  List cityList =[1,2,3,40.4,"Dhaka","Feni","Ctg","Khulna","Comilla",];
+   //List<String> list1 = ["Dhaka","Feni","Ctg","Khulna","Comilla",];
+   //List<int> list2 = [1,2,3,4,5];
+  print(cityList);
 
   //Example 2: how to Apply loop over A List;
 
-  List MyMate = ["Darus","Salam","Emon","Saimon","Nadim","Sakib","Tarim","bappi","Noman"];
+  List myMate = ["Darus","Salam","Emon","Saimon","Nadim","Sakib","Tarim","bappi","Noman"];
   print("\nExample 2: How to Apply loop over a list");
-  for(int i=0; i<MyMate.length;i++){
-      print("My Mate name is: ${MyMate[i]}");
+  for(int i=0; i<myMate.length;i++){
+      print("My Mate name is: ${myMate[i]}");
   }
 
   //Example 3: Sorting List in ASC, DESC ordered
@@ -32,24 +32,24 @@ void main(){
 
    //Example 4: Slicing,cutting,item removing from a List
 
-    List CountryList = ["Bangladesh","Pakistan","Nepal","Bhutan","MayanMar","India"];
+    List countryList = ["Bangladesh","Pakistan","Nepal","Bhutan","MayanMar","India"];
     print("\nExample 4: Slicing,cutting,item removing from a List");
-    print("\nCountryList: $CountryList");
+    print("\ncountryList: $countryList");
     //Slicing
-    List CountryListAfterSlicing = CountryList.sublist(0,5);
-    print("\nCountryListAfterSlicing: $CountryListAfterSlicing");
+    List countryListAfterSlicing = countryList.sublist(0,5);
+    print("\ncountryListAfterSlicing: $countryListAfterSlicing");
     //Removing
-    CountryList.remove("India");
-    print("AfterRemoving: $CountryList");
+    countryList.remove("India");
+    print("AfterRemoving: $countryList");
     //Remove Specific Index
-    CountryList.removeAt(4);
-    print("AfterRemoveSpecficIndex: $CountryList");
+    countryList.removeAt(4);
+    print("AfterRemoveSpecificIndex: $countryList");
     //Remove from Last
-    CountryList.removeLast();
-    print("AfterRemoveLast: $CountryList");
+    countryList.removeLast();
+    print("AfterRemoveLast: $countryList");
     //Clear List
-    CountryList.clear();
-    print("AfterClear: $CountryList");
+    countryList.clear();
+    print("AfterClear: $countryList");
 
     //Example 5: Adding item in List
     List itemList = ["Pen","Pencil","Rubber","Calculator","Scale","IdCard"];
