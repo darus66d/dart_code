@@ -26,7 +26,14 @@ void main(){
     }
     print("Count: $i");
   }
+  print("program ended");
   //decrement
+  for(int i= 0; i<=100;i++){
+    if(i==15){
+      continue;
+    }
+    print("Count: $i");
+  }
 
 
 
