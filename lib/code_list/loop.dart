@@ -15,6 +15,20 @@ void main(){
     print("number: $number");
   }
 
+  //Example 2: increment decrement in loop
+
+  print("\nExample 2: increment decrement in loop ");
+
+  //increment
+  for(int i= 0; i<=100;i++){
+    if(i==15){
+      break;
+    }
+    print("Count: $i");
+  }
+  //decrement
+
+
 
 
 
