@@ -24,4 +24,16 @@ void main(){
   print("After Add multiple item: $itemSet");
 
 
+  //Example 3: set convert to list
+
+  print("\nExample 3: set convert to list");
+
+  Set numbers = {1,2,3,4,5};
+
+  List newNumbers = numbers.toList();
+  print(newNumbers);
+
+
+
+
 }
