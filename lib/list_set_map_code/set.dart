@@ -48,6 +48,17 @@ void main(){
   Set<String> names = {'Darus','Nadim','Salam','Tamim','Bappi'};
   print("It is Darus? ${names.contains('Darus')}");
 
+  //Example 6: set operations
+  print("\nExample 6: Set operations");
+
+  Set<int> setA = {1,2,3,4};
+  Set<int> setB = {4,5,6,7};
+
+  print("Union: ${setA.union(setB)}");
+
+  print("Intersection:${setA.intersection(setB)}");
+  
+  print("Difference: ${setA.difference(setB)}");
 
 
 
