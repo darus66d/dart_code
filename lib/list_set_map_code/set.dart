@@ -42,7 +42,14 @@ void main(){
     fruits.remove('Banana');
     print("After removing: $fruits");
 
-  //Exa
+  //Example 5: Checking data
+  print("\nExample 5: Checking data from a set");
+
+  Set<String> names = {'Darus','Nadim','Salam','Tamim','Bappi'};
+  print("It is Darus? ${names.contains('Darus')}");
+
+
+
 
 
 
