@@ -33,6 +33,18 @@ void main(){
   List newNumbers = numbers.toList();
   print(newNumbers);
 
+  //Example 4: removing data
+  print("\nExample 4: Removing Data from a set");
+
+  Set<String> fruits = {'Apple','Banana','Orange','Mango'};
+    print("Original Sets: $fruits");
+
+    fruits.remove('Banana');
+    print("After removing: $fruits");
+
+  //Exa
+
+
 
 
 
