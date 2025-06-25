@@ -58,7 +58,8 @@ void main(){
 
   print("Intersection:${setA.intersection(setB)}");
   
-  print("Difference: ${setA.difference(setB)}");
+  print("Difference(A-B): ${setA.difference(setB)}");
+  print("Difference(B-A): ${setB.difference(setA)}");
 
 
 
