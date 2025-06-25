@@ -61,6 +61,19 @@ void main(){
 
 
 
+  //Example 6: for loop with list
+
+  List<int> num = [1,2,3,4,6];
+
+  print("\nExample 6: for loop with list");
+
+  for(int i=0; i<num.length;i++){
+    print(" number at index $i: ${num[i]} ");
+  }
+
+
+
+
 
 
 
