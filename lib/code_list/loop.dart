@@ -72,6 +72,18 @@ void main(){
   }
 
 
+  //Example 7: for loop with Condition
+
+  print("\nExample 7: for loop with Condition ");
+
+  for(int i=1; i<=10;i++){
+    if(i % 2 == 0){
+      print("$i is even number");
+    }else{
+      print("$i is odd number");
+    }
+  }
+
 
 
 
