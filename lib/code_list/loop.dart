@@ -35,6 +35,32 @@ void main(){
     print("Count: $i");
   }
 
+  //Example 3: For loop with Step
+
+  print("\nExample 3: For loop with Step");
+
+  for(int i =0 ; i<=10; i+=2){
+    print("Even Number: $i");
+  }
+
+  //Example 4: loop with decrement
+
+  print('\nExample 4: loop with decrement');
+
+  for(int i=5; i>=0;i--){
+    print("$i");
+  }
+
+  //Example 5: loop with multiple variables
+
+  print("\nExample 5: loop with multiple variables ");
+
+  for(int i=1,j=10; i<=5;i++,j--){
+    print("i=$i,j=$j");
+  }
+
+
+
 
 
 
