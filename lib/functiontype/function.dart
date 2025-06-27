@@ -11,6 +11,8 @@ void main(){
      name : "Salam",
      age: 24,
      city: "Dhaka");
+ print("\nExample 4: Create a default parameter");
+ addNumbers(a:10, b: 20, c: 40);
 }
 //Example 1: Create regular function
 //write your own function
@@ -36,4 +38,8 @@ personInfo({ required String? name, required int age , required String city}){
 }
 
 
-//Example 4
+//Example 4 Create a default Function
+
+addNumbers({a, b, c, d = 100}){
+  print(a+b+c+d);
+}
