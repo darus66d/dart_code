@@ -7,7 +7,10 @@ void main(){
  sumTwoNum(3, 50);
  print("\nExample 3: Create a positional parameter function");
  person("Darus", 27, "Dhaka");
-
+ personInfo(
+     name : "Salam",
+     age: 24,
+     city: "Dhaka");
 }
 //Example 1: basic function create
 //write your own function
@@ -26,5 +29,8 @@ sumTwoNum(a,b){
 //Example 3: Create a positional parameter function
 
 person(name,age,city){
+  print("Name is $name age $age City $city");
+}
+personInfo({ required String? name, required int age , required String city}){
   print("Name is $name age $age City $city");
 }
