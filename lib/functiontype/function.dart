@@ -1,18 +1,18 @@
 void main(){
-  print("\nExample 1: basic function create");
+  print("\nExample 1: write your regular function");
  addTwo();
- print("\nExample 2: Regular function create");
+ print("\nExample 2: Create a positional parameter function");
  sumTwoNum(10, 20);
  sumTwoNum(30, 40);
  sumTwoNum(3, 50);
- print("\nExample 3: Create a positional parameter function");
+ print("\nExample 3: Create a named parameter function");
  person("Darus", 27, "Dhaka");
  personInfo(
      name : "Salam",
      age: 24,
      city: "Dhaka");
 }
-//Example 1: basic function create
+//Example 1: Create regular function
 //write your own function
 addTwo(){
   var x= 10;
@@ -20,13 +20,13 @@ addTwo(){
   var z= x+y;
   print("Sum: $z");
 }
-//Example 2: create a regular function
-//write your regular function
+//Example 2: Create a positional parameter function
+//
 sumTwoNum(a,b){
   var sum = a+b;
   print(sum);
 }
-//Example 3: Create a positional parameter function
+//Example 3: Create a named parameter
 
 person(name,age,city){
   print("Name is $name age $age City $city");
@@ -34,3 +34,6 @@ person(name,age,city){
 personInfo({ required String? name, required int age , required String city}){
   print("Name is $name age $age City $city");
 }
+
+
+//Example 4
