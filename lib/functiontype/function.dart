@@ -13,6 +13,8 @@ void main(){
      city: "Dhaka");
  print("\nExample 4: Create a default parameter");
  addNumbers(a:10, b: 20, c: 40);
+ print("\nExample 5: Create a lambda or anonymus function");
+ myFun(50,60);
 }
 //Example 1: Create regular function
 //write your own function
@@ -43,3 +45,9 @@ personInfo({ required String? name, required int age , required String city}){
 addNumbers({a, b, c, d = 100}){
   print(a+b+c+d);
 }
+
+//Example 5: lambda / anonymous function
+
+var myFun=(x,y){
+  print(x+y);
+};
