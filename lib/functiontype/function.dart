@@ -13,8 +13,10 @@ void main(){
      city: "Dhaka");
  print("\nExample 4: Create a default parameter");
  addNumbers(a:10, b: 20, c: 40);
- print("\nExample 5: Create a lambda or anonymus function");
+ print("\nExample 5: Create a lambda or anonymous function");
  myFun(50,60);
+ print("\nExample 6: InLine Function / Arrow Function");
+ inLine(40,60);
 }
 //Example 1: Create regular function
 //write your own function
@@ -51,3 +53,7 @@ addNumbers({a, b, c, d = 100}){
 var myFun=(x,y){
   print(x+y);
 };
+
+//Example 6: InLine Function / Arrow Function
+
+var inLine= (x,y)=>print(x+y);
