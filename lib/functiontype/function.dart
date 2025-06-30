@@ -87,3 +87,6 @@ bangladesh(dhaka,ctg,rang,kul,raj){
   var totalBangladesh = dhaka()+ctg()+rang()+kul()+raj();
   print(totalBangladesh);
 }
+
+
+
