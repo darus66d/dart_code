@@ -57,3 +57,5 @@ var myFun=(x,y){
 //Example 6: InLine Function / Arrow Function
 
 var inLine= (x,y)=>print(x+y);
+
+//Example 7:
