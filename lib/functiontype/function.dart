@@ -75,6 +75,9 @@ int abSquare(a,b){
 
 fun1(x,y){
   print(x+y);
+  return(){
+    print("Call back Function called");
+  };
 }
 fun2(callbackFunction){
   callbackFunction();
