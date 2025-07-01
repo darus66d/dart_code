@@ -22,7 +22,14 @@ void main(){
  print("Result: $result");
  print("\nExample 8: Higher oder function/ call back function");
  fun2(fun1(10,20));
- bangladesh(dhaka(70), ctg(), rang(), kul(), raj());
+ // bangladesh(dhaka(70), ctg(), rang(), kul(), raj());
+ print("\nExample 9: Recursive Function");
+ var output = myRecursiveFun(8);
+ var output1 = myRecursiveFun(7);
+ var output2 = myRecursiveFun(6);
+ print(output);
+ print(output1);
+ print(output2);
 }
 //Example 1: Create regular function
 //write your own function
@@ -84,26 +91,38 @@ fun2(callbackFunction){
   callbackFunction();
 }
 
-bangladesh(dhaka,ctg,rang,kul,raj){
-  var totalBangladesh = dhaka()+ctg()+rang()+kul()+raj();
-  print(totalBangladesh);
-}
+// bangladesh(dhaka,ctg,rang,kul,raj){
+//   var totalBangladesh = dhaka()+ctg()+rang()+kul()+raj();
+//   print(totalBangladesh);
+// }
+//
+// dhaka(dist){
+//   print(dist);
+//   return 1;
+// }
+// ctg(){
+//   return 2;
+// }
+// rang(){
+//   return 2;
+// }
+// kul(){
+//   return 2;
+// }
+// raj(){
+//   return 2;
+// }
 
-dhaka(dist){
-  print(dist);
-  return 1;
-}
-ctg(){
-  return 2;
-}
-rang(){
-  return 2;
-}
-kul(){
-  return 2;
-}
-raj(){
-  return 2;
+//Example 9: Recursive Function
+
+//8*7*6*5*4*3*2*1 8!
+
+myRecursiveFun(n){
+  //stop condition
+  if(n<=1)return 1;
+
+  var result = n*myRecursiveFun(n-1);
+  return result;
 }
 
 
