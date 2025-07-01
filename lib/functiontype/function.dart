@@ -22,6 +22,7 @@ void main(){
  print("Result: $result");
  print("\nExample 8: Higher oder function/ call back function");
  fun2(fun1(10,20));
+ bangladesh(dhaka(70), ctg(), rang(), kul(), raj());
 }
 //Example 1: Create regular function
 //write your own function
@@ -86,6 +87,23 @@ fun2(callbackFunction){
 bangladesh(dhaka,ctg,rang,kul,raj){
   var totalBangladesh = dhaka()+ctg()+rang()+kul()+raj();
   print(totalBangladesh);
+}
+
+dhaka(dist){
+  print(dist);
+  return 1;
+}
+ctg(){
+  return 2;
+}
+rang(){
+  return 2;
+}
+kul(){
+  return 2;
+}
+raj(){
+  return 2;
 }
 
 
