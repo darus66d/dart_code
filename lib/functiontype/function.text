@@ -1,0 +1,30 @@
+1. What is function
+2. Create Your First Function
+3. Use case
+    - Code Reusability
+    - Modularity
+    - Maintainability
+    - Readability
+
+4. Regular Function
+5. Positional Parameter Function
+6. Named Parameter Function
+7. Default Parameter Function
+8. lambda/Anonymous Function
+9. Inline Function/Arrow Function
+10. Function Return Type
+
+11. Higher Order Function/ Call Back Function
+       - একটি ফাংশন আরেকটি ফাংশনকে প্যারামিটার আকারে গ্রহণ করে
+
+12. Recursive Function
+        - একটি ফাংশন যখন নিজেই নিজেকে কল করে
+
+
+13. Async Function-
+
+14. Function VS Method
+    - মেথড থাকে ক্লাসের মধ্যে
+    -
+
+
