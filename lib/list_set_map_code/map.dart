@@ -39,6 +39,32 @@ void main(){
     }
   }
 
+  //Example 3: Finding value by key
+  void findValueByKey() {
+    Map<String, int>studentScores = {
+      'Darus': 90,
+      'Salam': 80,
+      'Nadim': 95,
+      'Saimon': 85,
+    };
+    //Method 1: Direct Access using key
+    String studentName = 'Darus';
+    int? score = studentScores[studentName];
+    print("Score for $studentName : ${score ?? 'not found'}");
+
+    //Method 2: Using contains key to check first
+    String searchName ="Salam";
+    if(studentScores.containsKey(searchName)){
+      print("Score for $searchName : ${studentScores[searchName]}");
+    }else{
+      print("$searchName not Found in the records");
+    }
+
+  }
+
+
+
+
 
 
   print("\nExample 1: basic map");
@@ -46,5 +72,8 @@ void main(){
 
   print("\nExample 2: Finding key by value");
   findKeyByValue();
+
+  print("\nExample 3: Finding value by key ");
+  findValueByKey();
 
 }
