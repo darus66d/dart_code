@@ -53,14 +53,42 @@ void main(){
     print("Score for $studentName : ${score ?? 'not found'}");
 
     //Method 2: Using contains key to check first
-    String searchName ="Salam";
-    if(studentScores.containsKey(searchName)){
+    String searchName = "Salam";
+    if (studentScores.containsKey(searchName)) {
       print("Score for $searchName : ${studentScores[searchName]}");
-    }else{
+    } else {
       print("$searchName not Found in the records");
     }
-
   }
+
+    //Example 3: Finding multiple values by condition
+    void findValuesByCondition(){
+      Map<String, int> productionPrices ={
+        'Laptop': 1200,
+        'Phone': 800,
+        'Tablet': 500,
+        'Headphones' : 200,
+        'Mouse' : 50,
+      };
+
+      //Find all products under $600
+
+      Map<String,int> affordableProducts = Map.fromEntries(
+        productionPrices.entries
+            .where((entry)=> entry.value <600),
+      );
+      print("Products under \$600: $affordableProducts");
+
+      //Find the most Expensive Products
+      String mostExpensive =
+          productionPrices.entries
+              .reduce((a,b) =>
+          a.value > b.value
+              ? a : b).key;
+      print("Most Expensive product : $mostExpensive");
+    }
+    //Example 5:
+
 
 
 
@@ -75,5 +103,8 @@ void main(){
 
   print("\nExample 3: Finding value by key ");
   findValueByKey();
+
+  print("\nExample 4: Finding Multiple values By Condition");
+  findValuesByCondition();
 
 }
