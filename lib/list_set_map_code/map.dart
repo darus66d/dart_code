@@ -62,32 +62,52 @@ void main(){
   }
 
     //Example 3: Finding multiple values by condition
-    void findValuesByCondition(){
-      Map<String, int> productionPrices ={
+    void findValuesByCondition() {
+      Map<String, int> productionPrices = {
         'Laptop': 1200,
         'Phone': 800,
         'Tablet': 500,
-        'Headphones' : 200,
-        'Mouse' : 50,
+        'Headphones': 200,
+        'Mouse': 50,
       };
 
       //Find all products under $600
 
-      Map<String,int> affordableProducts = Map.fromEntries(
+      Map<String, int> affordableProducts = Map.fromEntries(
         productionPrices.entries
-            .where((entry)=> entry.value <600),
+            .where((entry) => entry.value < 600),
       );
       print("Products under \$600: $affordableProducts");
 
       //Find the most Expensive Products
       String mostExpensive =
           productionPrices.entries
-              .reduce((a,b) =>
+              .reduce((a, b) =>
           a.value > b.value
               ? a : b).key;
       print("Most Expensive product : $mostExpensive");
     }
-    //Example 5:
+    //Example 5: Finding keys with similar values
+  void findKeysWithSimilarValues(){
+    Map<String,String> userEmails ={
+      'Salam.Darus' : 'darus8350@gmail.com',
+      'karat.Nadim' : 'nadim23@gmail.com',
+      'Hamjala.saimon' : 'saimon25@gmail.com',
+      'john.doe': 'john@example.com',
+      'jane.smith': 'jane@example.com',
+      'john.smith': 'john@example.com',
+      'alice.wong': 'alice@example.com',
+    };
+    //Find All user names with the same email
+    String searchEmail = 'john@example.com';
+    List<String> usernames =
+        userEmails.entries
+            .where((entry) => entry.value == searchEmail)
+            .map((entry) => entry.key)
+            .toList();
+    print("UserNames with email $searchEmail : $usernames");
+
+  }
 
 
 
@@ -106,5 +126,8 @@ void main(){
 
   print("\nExample 4: Finding Multiple values By Condition");
   findValuesByCondition();
+
+  print("\nExample 5: Finding keys with similar values");
+  findKeysWithSimilarValues();
 
 }
