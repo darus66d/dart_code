@@ -29,8 +29,16 @@ void main(){
             .toList();
     print("Countries with Capital $searchCapital: $countries");
 
-
+    //Method 2: using first where() to find the first matching key
+    try{
+      String country =
+          capitals.entries.firstWhere((entry)=> entry.value ==searchCapital).key;
+      print("First Country with Capital $searchCapital : $country ");
+    }catch(e){
+      print("no Country Found with the capital $searchCapital");
+    }
   }
+
 
 
   print("\nExample 1: basic map");
