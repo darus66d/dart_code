@@ -109,12 +109,6 @@ void main(){
 
   }
 
-
-
-
-
-
-
   print("\nExample 1: basic map");
   print("Information: $info");
 
