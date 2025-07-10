@@ -42,6 +42,19 @@ void main() {
     print("After updating map: $colors");
   }
 
+    //Example 5:Remove an item from a map
+  void removeFromMap(){
+    Map<String,double> prices = {
+      'phone' : 1.90,
+      'headphone' : 3.1,
+      'Watch' : 2.5,
+      'laptop' : 10.2,
+    };
+    print("original Map: $prices");
+    prices.remove('laptop');
+    print("After removing map: $prices");
+  }
+
 
 
 
@@ -57,6 +70,9 @@ void main() {
 
   print("\nExample 4: Update a key value pair in a map");
   updateMap();
+
+  print("\nExample 5: remove a key value pair in a map");
+  removeFromMap();
 
 
 }
