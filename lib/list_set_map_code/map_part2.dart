@@ -32,8 +32,18 @@ void main() {
 
       ages['Salam'] = 28;
       print("New map : $ages");
-
   }
+
+    //Example 4: Update a key value pair in a map
+  void updateMap(){
+    Map<String,String> colors = {'apple': 'Red', 'Orange': 'Green'};
+    print("Original Map: $colors");
+    colors['apple'] ='white';
+    print("After updating map: $colors");
+  }
+
+
+
 
 
   print("\nExample 1: Different way to create a map");
@@ -44,6 +54,9 @@ void main() {
 
   print("\nExample 3: Add a key value pair to a map");
   addToMap();
+
+  print("\nExample 4: Update a key value pair in a map");
+  updateMap();
 
 
 }
