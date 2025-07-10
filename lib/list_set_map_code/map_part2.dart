@@ -15,15 +15,24 @@ void main() {
     print("Map 2: $scores2");
   }
   //Example 2: Access an item from a map
-  void accessMapItem(){
-    Map<String,String> capitals ={
-      'USA' : 'Washington D.C',
-      'Japan' : 'Tokyo',
-      'France' : 'Paris',
+  void accessMapItem() {
+    Map<String, String> capitals = {
+      'USA': 'Washington D.C',
+      'Japan': 'Tokyo',
+      'France': 'Paris',
     };
     print("Capital of USA : ${capitals['USA']}");
     print("Capital of Germany: ${capitals ['Germany']}");
-    
+  }
+
+    //Example 3: Add a key Value pair to a map
+    void addToMap(){
+      Map<String,int> ages = {'Darus':25,'Alice':30};
+      print("Original Map: $ages");
+
+      ages['Salam'] = 28;
+      print("New map : $ages");
+
   }
 
 
@@ -32,6 +41,9 @@ void main() {
 
   print("\nExample 2: Access an item from a map  ");
   accessMapItem();
-  
+
+  print("\nExample 3: Add a key value pair to a map");
+  addToMap();
+
 
 }
