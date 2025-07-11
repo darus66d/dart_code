@@ -62,6 +62,21 @@ void main() {
     print("Is user3 in the map? ${isActive.containsKey('user3')}");
   }
 
+  //Example 7: Loop through a map
+  void loopThroughMap(){
+    Map<String,int> scores = {'Darus':90,'salam':85,'Nadim':100,'Saimon':95};
+    print("Using for-each");
+    scores.forEach((name,score){
+      print("$name:$score");
+    });
+
+    print("\nUsing for-in");
+    for(var entry in scores.entries){
+      print("${entry.key}: ${entry.value}");
+    }
+
+  }
+
 
   print("\nExample 1: Different way to create a map");
   createMap();
@@ -81,5 +96,7 @@ void main() {
   print("\nExample 6: Check if a specific key Exists in a map");
   checkKeyInMap();
 
+  print("\nExample 7: loop through a map");
+  loopThroughMap();
 
 }
