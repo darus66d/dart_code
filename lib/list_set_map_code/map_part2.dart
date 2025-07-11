@@ -55,8 +55,12 @@ void main() {
     print("After removing map: $prices");
   }
 
-
-
+  //Example 6: Check if a specific key Exists in a map
+  void checkKeyInMap(){
+    Map<String,String> isActive ={'user1': 'Darus','user2':'Salam'};
+    print("Is user1 in the map? ${isActive.containsKey('user1')}");
+    print("Is user3 in the map? ${isActive.containsKey('user3')}");
+  }
 
 
   print("\nExample 1: Different way to create a map");
@@ -73,6 +77,9 @@ void main() {
 
   print("\nExample 5: remove a key value pair in a map");
   removeFromMap();
+
+  print("\nExample 6: Check if a specific key Exists in a map");
+  checkKeyInMap();
 
 
 }
