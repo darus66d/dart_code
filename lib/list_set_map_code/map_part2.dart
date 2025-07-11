@@ -74,6 +74,16 @@ void main() {
     for(var entry in scores.entries){
       print("${entry.key}: ${entry.value}");
     }
+  }
+  //Example 8: Convert keys and values of a map into separate lists
+  void convertMapToLists(){
+    Map<String,int> scores = {'Darus':90,'salam':85,'Nadim':100,'Saimon':95};
+    print("Original Maps: $scores");
+    List<String> names = scores.keys.toList();
+    List<int> values = scores.values.toList();
+
+    print("Names: $names");
+    print("Values: $values");
 
   }
 
@@ -98,5 +108,8 @@ void main() {
 
   print("\nExample 7: loop through a map");
   loopThroughMap();
+
+  print("\nExample 8: Convert keys and values of Map into a seperate lists");
+  convertMapToLists();
 
 }
