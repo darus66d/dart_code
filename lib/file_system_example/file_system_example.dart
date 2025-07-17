@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:path/path.dart'as path;
 
 void  main () async{
 
@@ -114,6 +115,23 @@ void  main () async{
     }
   }
 
+  //Working with file paths
+
+  void demonstratePathOperations(){
+    print("\n6: path operations ");
+    //Get Current Directory
+    final currentDir = Directory.current.path;
+    print('Current Directory: $currentDir\n');
+    //join paths
+    final filePath = path.join(currentDir,'test','file.text');
+    print('Joind path: $filePath\n');
+    //Get path components
+    print("Directory name: ${path.dirname(filePath)}\n");
+    print('file name: ${path.basename(filePath)}\n');
+    print('File extension: ${path.isAbsolute(filePath)}');
+
+  }
+
 
 
 
@@ -126,5 +144,6 @@ void  main () async{
   await demonstrateFileManagement();
   await demonstrateDirectoryOperations();
   await demonstrateDirectoryListing();
+  demonstratePathOperations();
 
 }
