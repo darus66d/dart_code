@@ -67,9 +67,36 @@ void  main () async{
      }
   }
 
+  //Create and Delete Directories
+  Future<void> demonstrateDirectoryOperations() async{
+    print("\n4. Directory Operations");
+
+    //Create a new Directory
+    final directory = Directory('test_directory');
+
+    try{
+      await directory.create();
+      print("Directory Created: ${directory.path}");
+
+      //create nested directories
+      final nestedDir = Directory('test_directory/nested/further');
+      await nestedDir.create(recursive: true);
+      print("Nested Directories Created");
+    }catch(e){
+      print("Error: $e");
+    }
+  }
+
+
+
+
+
+
+
   //Run All Example
   demonstrateIOBasics();
   await demonstrateFileOperations();
   await demonstrateFileManagement();
+  await demonstrateDirectoryOperations();
 
 }
