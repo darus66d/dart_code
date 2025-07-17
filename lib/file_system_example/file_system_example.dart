@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 
 void  main () async{
 
@@ -42,8 +43,33 @@ void  main () async{
       print("Error: $e");
     }
 
-
   }
 
+  //3. Delete, Rename, and check File Existence
+
+  Future<void> demonstrateFileManagement() async{
+    print('\n3. File management operations');
+
+    final file = File('example.txt');
+    //Check if file exists
+    bool exists = await file.exists();
+    print("File Exists: $exists ");
+
+    // Rename File
+     try{
+       final newFile = await file.rename('Renamed_Example.txt');
+       print("File Renamed To : ${newFile.path}");
+       //Delete File
+       await newFile.delete();
+       print('File deleted SuccessFully');
+     }catch(e){
+       print('Error: $e');
+     }
+  }
+
+  //Run All Example
+  demonstrateIOBasics();
+  await demonstrateFileOperations();
+  await demonstrateFileManagement();
 
 }
