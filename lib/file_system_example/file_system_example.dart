@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
 
 void  main () async{
 
@@ -87,6 +86,34 @@ void  main () async{
     }
   }
 
+  //Create file list in Directory
+  Future<void> demonstrateDirectoryListing() async{
+    print("\n5: Directory Listing");
+
+    //create a directory with some files
+    final directory = Directory('List_example');
+    await directory.create();
+    print("Directory Successfully Created\n");
+
+    //Create some files
+    await File('${directory.path}/file1.txt').writeAsString("File 1");
+    await File('${directory.path}/file2.txt').writeAsString("File 2");
+    await Directory('${directory.path}/subdir').create();
+
+    //list Directory contents
+
+    try{
+      print('Directory Contents');
+      await for(FileSystemEntity entity in directory.list(recursive: true)){
+        print('${entity.path}(${ entity is File? 'file': 'Directory'})');
+      }
+      // Clean up
+      // await directory.delete(recursive: true);
+    }catch(e){
+      print('Error: $e');
+    }
+  }
+
 
 
 
@@ -98,5 +125,6 @@ void  main () async{
   await demonstrateFileOperations();
   await demonstrateFileManagement();
   await demonstrateDirectoryOperations();
+  await demonstrateDirectoryListing();
 
 }
