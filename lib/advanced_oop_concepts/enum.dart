@@ -20,3 +20,22 @@
   - Categories or types
   - Configuration options
 */
+
+//Example 1: Basic Enum usage
+enum Color {red,green,blue,yellow,purple,orange}
+
+
+
+
+void main(){
+  print("Dart Enum Examples\n");
+
+  //Example 1: Basic Enum usage
+  print("Example 1: Basic Enum Usage:");
+  Color favouriteColor = Color.blue;
+  print("Favourite color: \\${favouriteColor.name}");
+  print("Color index: \\${favouriteColor.index}");
+  print("All colors: \\${Color.values.map((c)=>c.name).join(',')}");
+  //print("Hex value : \\${ColorManager.getHexValue(favouriteColor)}")
+
+}
