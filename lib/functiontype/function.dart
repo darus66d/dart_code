@@ -1,28 +1,47 @@
 void main(){
+
+
   print("\nExample 1: write your regular function");
  addTwo();
+
+
  print("\nExample 2: Create a positional parameter function");
  sumTwoNum(10, 20);
  sumTwoNum(30, 40);
  sumTwoNum(3, 50);
+
+
  print("\nExample 3: Create a named parameter function");
  person("Darus", 27, "Dhaka");
  personInfo(
      name : "Salam",
      age: 24,
      city: "Dhaka");
+
+
  print("\nExample 4: Create a default parameter");
  addNumbers(a:10, b: 20, c: 40);
+
+
  print("\nExample 5: Create a lambda or anonymous function");
  myFun(50,60);
+
+
  print("\nExample 6: InLine Function / Arrow Function");
  inLine(40,60);
+
+
  print("\n//Example 7: Function return types");
  int result = abSquare(2, 3);
  print("Result: $result");
+
+
  print("\nExample 8: Higher oder function/ call back function");
  fun2(fun1(10,20));
  // bangladesh(dhaka(70), ctg(), rang(), kul(), raj());
+
+
+
  print("\nExample 9: Recursive Function");
  var output = myRecursiveFun(8);
  var output1 = myRecursiveFun(7);
@@ -31,6 +50,8 @@ void main(){
  print(output1);
  print(output2);
 }
+
+
 //Example 1: Create regular function
 //write your own function
 addTwo(){
