@@ -1,0 +1,17 @@
+1. Dart asynchronous programming
+    -regular function
+    -async{} --> await --> return future
+
+2. Main Function Asynchronous programming
+
+3. Asynchronous function -call- need Asynchronous function
+
+4. calling remote api datta
+
+5. try catch
+
+6. Dart Isolation (multitasking)
+
+7.Stream Builder
+
+8.Stream Controller
